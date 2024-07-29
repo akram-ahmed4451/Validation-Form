@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ValidateForm</title>
+    <link rel="stylesheet" href="./validateForm.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend>
+        <h2>Validation Form</h2>
+      </legend>
+      <div class="container">
+        <form
+          action="#"
+          name="myForm"
+          onsubmit="return validatetionForm()"
+          method="#"
+        >
+          <table>
+            <tr>
+              <td class="size">First Name:</td>
+              <td class="input">
+                <input type="text" name="Firstname" placeholder="First Name" />
+              </td>
+              <td><span id="fnameerror"></span></td>
+            </tr>
+
+            <tr>
+              <td class="size">Last Name:</td>
+              <td>
+                <input type="text" name="lname" placeholder=" Last Name" />
+              </td>
+              <td><span id="lnameerror"></span></td>
+            </tr>
+
+            <tr>
+              <td class="size">Phone Nu:</td>
+              <td>
+                <input
+                  type="number"
+                  name="usernumber"
+                  placeholder="Phone Nu."
+                />
+              </td>
+              <td><span id="numbererror"></span></td>
+            </tr>
+            <tr>
+              <td class="size">Email Id:</td>
+              <td>
+                <input
+                  type="email"
+                  name="useremail"
+                  placeholder="Email Address"
+                />
+              </td>
+              <td><span id="emailerror"></span></td>
+            </tr>
+            <tr>
+              <td class="size">Password:</td>
+              <td>
+                <input type="text" name="userpass" placeholder="Password" />
+              </td>
+              <td><span id="passerror"></span></td>
+            </tr>
+            <tr>
+              <td class="size">Confirm Password:</td>
+              <td>
+                <input
+                  type="text"
+                  name="usercpass"
+                  placeholder="Confirm Password"
+                />
+              </td>
+              <td><span id="cpasserror"></span></td>
+            </tr>
+            <tr>
+              <td><button>Submit</button></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </fieldset>
+
+    <script src="./validateForm.js">
+    </script>
+  </body>
+</html>
